@@ -10,7 +10,7 @@ class Solution:
         # After each nn.Linear, record: mean, std, dead_fraction
         # Run with torch.no_grad(). Round to 4 decimals.
         stats = []
-        pending_linear_index = None
+        n = None
 
         with torch.no_grad():
             for layer in model:
